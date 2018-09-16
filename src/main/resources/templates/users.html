@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Hello World Thymeleaf!!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <p>This page will display the users A!!</p>
+    <span th:text="${users.size()}"></span>
+    <ul th:each="myuser:${users}">
+    <li>
+    <span> First Name Of User is :</span>
+    <span th:text="${myuser.firstName}"></span>
+    </li>
+    <li>
+    <span> Last Name Of User is :</span>
+    <span th:text="${myuser.lastName}"></span>
+    </li>
+    <li>
+    <span> ID Of User is :</span>
+    <span th:text="${myuser.id}"></span>
+    </li>
+    <li>
+    <span> Sex Of User is :</span>
+    <span th:text="${myuser.sex}"></span>
+    </li>
+    <li>
+    <span> DOB Of User is :</span>
+    <span th:text="${myuser.dob}"></span>
+    </li>
+    <li>
+    <span> User id Of User is :</span>
+    <span th:text="${myuser.userId}"></span>
+    </li>
+    </ul>
+  </body>
+</html>
